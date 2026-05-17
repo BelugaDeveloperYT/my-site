@@ -1,1 +1,132 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Website</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+
+    header{
+      padding:20px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:#111827;
+      border-bottom:1px solid #1e293b;
+    }
+
+    .logo{
+      font-size:24px;
+      font-weight:bold;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    .hero{
+      flex:1;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:40px;
+    }
+
+    .hero-content{
+      max-width:700px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:20px;
+      color:#cbd5e1;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 28px;
+      background:#38bdf8;
+      color:black;
+      text-decoration:none;
+      border-radius:10px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#0ea5e9;
+      transform:scale(1.05);
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#111827;
+      color:#94a3b8;
+      border-top:1px solid #1e293b;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">MySite</div>
+
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Website</h1>
+
+      <p>
+        A clean GitHub Pages website with no dashboard,
+        support, or documentation pages.
+      </p>
+
+      <a class="btn" href="#">
+        Get Started
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 MySite. All rights reserved.
+  </footer>
+
+</body>
+</html>
