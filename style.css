@@ -14,3 +14,33 @@ nav a {
 h1 {
     color: lime;
 }
+
+.email-box {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.email-box button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socials a {
+    color: cyan;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.socials a:hover {
+    color: lime;
+}
