@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Concord™ | Crafting the bots servers rely on</title>
+<meta name="description" content="Concord™ is a Discord bot engineering studio specializing in crafting the bots servers rely on. We build tools that bring moderation, automation, and community management together into single, dependable systems, so server owners can focus on their community instead of piecing together a dozen different bots.">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="canonical" href="https://home.concordstudios.lol/">
+<link rel="icon" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Concord™">
+<meta property="og:title" content="Concord™ | Crafting the bots servers rely on">
+<meta property="og:description" content="Concord™ is a Discord bot engineering studio specializing in crafting the bots servers rely on. We build tools that bring moderation, automation, and community management together into single, dependable systems, so server owners can focus on their community instead of piecing together a dozen different bots.">
+<meta property="og:url" content="https://home.concordstudios.lol/">
+<meta property="og:image" content="https://home.concordstudios.lol/assets/og.png?v=2"><meta property="og:image:secure_url" content="https://home.concordstudios.lol/assets/og.png?v=2"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Concord™: Crafting the bots servers rely on.">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Concord™ | Crafting the bots servers rely on"><meta name="twitter:description" content="Concord™ is a Discord bot engineering studio specializing in crafting the bots servers rely on. We build tools that bring moderation, automation, and community management together into single, dependable systems, so server owners can focus on their community instead of piecing together a dozen different bots."><meta name="twitter:image" content="https://home.concordstudios.lol/assets/og.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0b;--card:#111113;--card2:#161619;--line:#26262a;--fg:#f4f4f5;--mut:#9b9ba3;--dim:#6b6b73;--r:18px}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--fg);font:400 16px/1.65 Montserrat,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img,video{display:block;max-width:100%}
+.wrap{width:min(1120px,100% - 40px);margin:0 auto}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(900px 520px at 50% -8%,#1d1d21 0,transparent 70%),radial-gradient(700px 400px at 100% 60%,#141416 0,transparent 70%)}
+/* nav */
+header{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(10,10,11,.72);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:28px;height:68px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:19px;letter-spacing:-.01em}.brand img{width:34px;height:34px;border-radius:9px}.brand sup{font-size:9px;font-weight:700;margin-left:2px;color:var(--mut)}
+nav{display:flex;gap:6px;margin-left:auto}nav a{padding:8px 14px;border-radius:999px;font-size:14px;font-weight:500;color:var(--mut);transition:.2s}nav a:hover{color:var(--fg);background:var(--card2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 24px;border-radius:999px;font:600 14px Montserrat,sans-serif;border:1px solid var(--line);transition:.22s;cursor:pointer}
+.btn.pri{background:var(--fg);color:#0a0a0b;border-color:var(--fg)}.btn.pri:hover{background:#fff;transform:translateY(-2px);box-shadow:0 10px 30px rgba(255,255,255,.14)}
+.btn.sec{background:transparent;color:var(--fg)}.btn.sec:hover{background:var(--card2);border-color:#3a3a40;transform:translateY(-2px)}
+.btn.sm{padding:10px 18px;font-size:13px}
+/* hero */
+.hero{padding:84px 0 30px;text-align:center}
+.eyebrow{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);border:1px solid var(--line);padding:7px 16px;border-radius:999px;background:var(--card)}
+h1{font-size:clamp(38px,6.4vw,74px);font-weight:800;letter-spacing:-.035em;line-height:1.04;margin:26px auto 0;max-width:15ch}
+h1 span{background:linear-gradient(90deg,#fff,#8d8d95 50%,#fff);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 6s linear infinite}
+@keyframes sh{to{background-position:-200% 0}}
+.lead{color:var(--mut);font-size:clamp(16px,2vw,19px);max-width:62ch;margin:22px auto 0}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.stage{margin:54px auto 0;border-radius:24px;overflow:hidden;border:1px solid var(--line);background:#000;box-shadow:0 40px 90px -30px rgba(255,255,255,.12),0 0 0 8px rgba(255,255,255,.015)}
+.stage img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+/* sections */
+section{padding:96px 0}.sh{margin-bottom:46px}.sh small{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+h2{font-size:clamp(28px,4vw,42px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin-top:10px}
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.about p{color:var(--mut);margin-top:18px}.about p b{color:var(--fg);font-weight:600}
+.pills{display:grid;gap:14px}.pill{display:flex;gap:16px;align-items:flex-start;padding:20px 22px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);transition:.25s}
+.pill:hover{border-color:#3b3b41;transform:translateX(4px)}svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.pill i{flex:none;width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:var(--card2);border:1px solid var(--line)}.pill b{display:block;font-size:15px}.pill span{color:var(--mut);font-size:14px}
+/* bots */
+.bots{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.bot{display:flex;flex-direction:column;padding:34px;background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:24px;transition:.3s;position:relative;overflow:hidden}
+.bot:hover{border-color:#3d3d44;transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(255,255,255,.14)}
+.bot:before{content:"";position:absolute;inset:-1px -1px auto;height:140px;background:radial-gradient(260px 120px at 20% 0,rgba(255,255,255,.07),transparent);pointer-events:none}
+.bh{display:flex;align-items:center;gap:18px}.bh img{width:72px;height:72px;border-radius:18px;border:1px solid var(--line)}
+.bh h3{font-size:27px;font-weight:800;letter-spacing:-.02em;line-height:1.1}.bh h3 sup{font-size:11px;color:var(--mut)}.bh p{color:var(--mut);font-size:14px;margin-top:3px}
+.tag svg.mi{width:15px;height:15px}
+.tag{display:inline-flex;align-items:center;gap:7px;margin-top:22px;font-size:12px;font-weight:600;padding:5px 12px;border-radius:999px;border:1px solid var(--line);color:var(--mut);align-self:flex-start}
+.bot ul{list-style:none;padding:0;margin:22px 0 30px;display:grid;gap:12px;flex:1}.bot li{display:flex;gap:12px;color:#cfcfd4;font-size:15px}.bot li:before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--fg);margin-top:10px;opacity:.7}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+/* credits */
+.cred{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.person{display:flex;align-items:center;gap:22px;padding:28px;background:var(--card);border:1px solid var(--line);border-radius:24px;transition:.3s}
+.person:hover{border-color:#3d3d44;transform:translateY(-5px)}
+.person img{width:96px;height:96px;border-radius:50%;object-fit:cover;border:2px solid #2d2d32;box-shadow:0 0 0 5px rgba(255,255,255,.03)}
+.person h3{font-size:22px;font-weight:800;letter-spacing:-.01em}.person p{color:var(--mut);font-size:14px;margin-top:4px}
+.person em{display:inline-block;font-style:normal;margin-top:12px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 11px;border:1px solid var(--line);border-radius:999px;color:var(--fg)}
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.cc{padding:34px;background:var(--card);border:1px solid var(--line);border-radius:24px;display:flex;flex-direction:column;align-items:flex-start;gap:6px;transition:.3s}
+.cc:hover{border-color:#3d3d44;transform:translateY(-5px)}
+.cc .ic{width:48px;height:48px;border-radius:14px;background:var(--card2);border:1px solid var(--line);display:grid;place-items:center;margin-bottom:12px}.cc .ic svg{width:22px;height:22px}
+.cc h3{font-size:20px;font-weight:700}.cc p{color:var(--mut);font-size:15px;margin-bottom:16px;flex:1}
+footer{border-top:1px solid var(--line);padding:38px 0 46px;color:var(--dim);font-size:13px}
+.ft{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}.ft div{display:flex;gap:20px}.ft a:hover{color:var(--fg)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}.rv.in{opacity:1;transform:none}
+@media(max-width:860px){.about,.bots,.cred,.contact{grid-template-columns:1fr}section{padding:70px 0}.hero{padding-top:56px}nav a:nth-child(n+4){display:none}.person{flex-direction:column;text-align:center}.nav{gap:12px}}
+@media(max-width:520px){nav{display:none}.nav .btn{margin-left:auto}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 8.3-8 9-4.8-.7-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+<symbol id="link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+<symbol id="chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9.5L5 20v-4H4V5z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 7.5l8.5 6 8.5-6"/></symbol>
+<symbol id="badge" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.8 2.8 5.2-5.5"/></symbol>
+<symbol id="siren" viewBox="0 0 24 24"><path d="M7 18v-5.5a5 5 0 0 1 10 0V18"/><path d="M5 21h14M12 3v2M4 7l1.6 1.2M20 7l-1.6 1.2"/></symbol>
+</defs></svg>
+<header><div class="wrap nav">
+  <a class="brand" href="#home"><img src="assets/logo.png" alt="Concord logo"><span>Concord<sup>TM</sup></span></a>
+  <nav><a href="#home">Home</a><a href="#bots">Our Bots</a><a href="#credits">Credits</a><a href="#contact">Contact Us</a></nav>
+  <a class="btn pri sm" href="https://discord.gg/44BMPTJQVF" target="_blank" rel="noopener">Join Support</a>
+</div></header>
+
+<main id="home">
+<div class="wrap hero">
+  <span class="eyebrow">Concord™ presents</span>
+  <h1>Crafting the bots <span>servers rely on.</span></h1>
+  <p class="lead">Concord is the partnership behind <b>Shark</b> and <b>Precinct</b>: two bots built to keep your Roblox and Discord communities secure, organized and running smoothly.</p>
+  <div class="cta"><a class="btn pri" href="#bots">Explore our bots</a><a class="btn sec" href="#contact">Contact us</a></div>
+  <div class="stage"><img src="assets/banner.gif" width="960" height="540" alt="Concord: Crafting the bots servers rely on." fetchpriority="high"></div>
+</div>
+
+<section id="who"><div class="wrap about">
+  <div class="rv"><div class="sh" style="margin:0"><small>Who we are</small><h2>Two teams. One standard.</h2></div>
+  <p><b>Concord™</b> brings together two developers with one goal: build bots that communities can actually depend on. Every tool we ship is designed, tested and supported by the people who made it.</p>
+  <p>From <b>moderation and anti-nuke protection</b> to <b>ERLC department management</b>, we focus on features that save staff time and keep servers safe.</p></div>
+  <div class="pills rv">
+    <div class="pill"><i><svg><use href="#shield"/></svg></i><div><b>Reliable &amp; secure</b><span>Protection and tooling you can trust around the clock.</span></div></div>
+    <div class="pill"><i><svg><use href="#link"/></svg></i><div><b>Built for Roblox × Discord</b><span>Verification and rank sync that keep roles up to date.</span></div></div>
+    <div class="pill"><i><svg><use href="#chat"/></svg></i><div><b>Real support</b><span>A team that listens, replies and keeps improving.</span></div></div>
+  </div>
+</div></section>
+
+<section id="bots"><div class="wrap">
+  <div class="sh rv"><small>Our bots</small><h2>Everything your community needs.</h2></div>
+  <div class="bots">
+    <article class="bot rv">
+      <div class="bh"><img src="assets/shark.png" alt="Shark logo"><div><h3>Shark<sup>™</sup></h3><p>The all-in-one Roblox &amp; Discord bot</p></div></div>
+      <span class="tag"><svg class="mi"><use href="#badge"/></svg>Verified by Discord</span>
+      <ul>
+        <li><span><b>Powerful moderation</b> with an AI system that reads context and acts automatically.</span></li>
+        <li><span><b>Anti-nuke &amp; anti-raid</b> protection with automatic lockdowns when joins spike.</span></li>
+        <li><span><b>Full modmail</b> with claiming, unclaiming and closed-thread transcripts.</span></li>
+        <li><span><b>Roblox × Discord</b> verification and rank synchronization.</span></li>
+        <li><span><b>Bot scanning</b> and Sharky.AI to keep your server clean and answer questions.</span></li>
+      </ul>
+      <div class="row"><a class="btn pri" href="https://discord.com/oauth2/authorize?client_id=1548533467891896370&permissions=1099780139062&scope=bot%20applications.commands" target="_blank" rel="noopener">Add Shark to your server</a><a class="btn sec" href="https://sharkapp.lol" target="_blank" rel="noopener">Website</a></div>
+    </article>
+    <article class="bot rv">
+      <div class="bh"><img src="assets/precinct.png" alt="Precinct logo"><div><h3>Precinct<sup>™</sup></h3><p>The ERLC department manager</p></div></div>
+      <span class="tag"><svg class="mi"><use href="#siren"/></svg>Built for ERLC servers</span>
+      <ul>
+        <li><span><b>Real ERLC ranks</b> for PD, Sheriff, Fire and DOT, set up with one command.</span></li>
+        <li><span><b>Shift tracking</b> with leaderboards, weekly MVP and inactivity checks.</span></li>
+        <li><span><b>Trainings &amp; promotions</b> with attendance, approvals and auto-promote.</span></li>
+        <li><span><b>Roblox rank sync</b> keeps Discord ranks matched to your group.</span></li>
+        <li><span><b>Precinct MDT</b> web app for citations, warnings, stops, arrests and BOLOs.</span></li>
+      </ul>
+      <div class="row"><a class="btn pri" href="https://discord.com/oauth2/authorize?client_id=1558624365451550720" target="_blank" rel="noopener">Add Precinct to your server</a><a class="btn sec" href="https://precinctapp.lol" target="_blank" rel="noopener">Website</a></div>
+    </article>
+  </div>
+</div></section>
+
+<section id="credits"><div class="wrap">
+  <div class="sh rv"><small>Credits</small><h2>The people behind Concord.</h2></div>
+  <div class="cred">
+    <div class="person rv"><img src="assets/siahh.jpg" alt="siahh" loading="lazy"><div><h3>siahh</h3><p>Lead Programmer &amp; CEO</p><em>CEO</em></div></div>
+    <div class="person rv"><img src="assets/aykj.jpg" alt="ayKJ" loading="lazy"><div><h3>ayKJ</h3><p>UX Technical Lead &amp; CEO</p><em>CEO</em></div></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="sh rv"><small>Contact us</small><h2>Questions? We're here.</h2></div>
+  <div class="contact">
+    <div class="cc rv"><div class="ic"><svg><use href="#chat"/></svg></div><h3>Support server</h3><p>Get help, report a bug or suggest a feature. The fastest way to reach the team.</p><a class="btn pri" href="https://discord.gg/44BMPTJQVF" target="_blank" rel="noopener">Join the support server</a></div>
+    <div class="cc rv"><div class="ic"><svg><use href="#mail"/></svg></div><h3>Email</h3><p>For business enquiries and anything that doesn't fit in Discord.</p><a class="btn sec" href="mailto:support@sharkapp.lol">support@sharkapp.lol</a></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap ft"><span>© 2026 Concord™. All rights reserved. Shark™ and Precinct™ are Concord products.</span><div><a href="#home">Home</a><a href="#bots">Our Bots</a><a href="#credits">Credits</a><a href="#contact">Contact</a></div></div></footer>
+<script>
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4d76d4619ddd259',t:'MTc5MjQ5MzA2Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body></html>
